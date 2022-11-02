@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ConfigFramework>
+   <Doc> This model simulates prisonersdilemma using Cell-Devs. It uses Lopez linux version with multiple neighbor ports (value). Drawlog file shows 2D visualization of simulation result logs. For Detailed XML configuration please see User Manual. </Doc>
+      <Files>
+	 <File ftype="ma">prisonersdilemma.ma</File>
+      </Files>
+   <Options>
+      <TimeOp>00:00:05:000</TimeOp>
+      <OnlyYMsgOP>true</OnlyYMsgOP>
+      <ParsingOp>false</ParsingOp>      
+   </Options>     
+   <DrawLog>
+      <CoupledModel>prisonersdilemma</CoupledModel>
+      <Width>3</Width>
+      <Precision>0</Precision>    
+      <NotPrintZero>true</NotPrintZero>   
+      <TimeInterval>00:00:00:100</TimeInterval> 
+      <NeighborPort>state</NeighborPort> 
+   </DrawLog>  
+</ConfigFramework>
